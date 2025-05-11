@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Box Shadow Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1>✨ Box Shadow Generator</h1>
+      <div class="controls">
+        <label>Horizontal Offset
+          <input type="range" id="h-offset" min="-50" max="50" value="10">
+        </label>
+        <label>Vertical Offset
+          <input type="range" id="v-offset" min="-50" max="50" value="10">
+        </label>
+        <label>Blur Radius
+          <input type="range" id="blur" min="0" max="100" value="20">
+        </label>
+        <label>Spread
+          <input type="range" id="spread" min="0" max="50" value="5">
+        </label>
+        <label>Shadow Color
+          <input type="color" id="color" value="#000000">
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="inset"> Inset
+        </label>
+      </div>
+
+      <div class="preview" id="preview">Shadow Box</div>
+      <div class="output-container">
+        <h3>CSS Code:</h3>
+        <pre id="css-output"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
